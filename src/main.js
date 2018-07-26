@@ -3,7 +3,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import store from './store'
 
+import './mock/mockServer'
 import './filters/formatdate'
 
 Vue.config.productionTip = false;
@@ -13,5 +15,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  store,
 })

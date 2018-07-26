@@ -2,6 +2,7 @@
   <div id="app">
     <Header></Header>
     <Nav></Nav>
+    <Banner></Banner>
     <router-view/>
   </div>
 </template>
@@ -13,7 +14,7 @@
   export default {
     name: 'App',
     components: {
-      Header,Nav
+      Header,Nav,Banner
     }
   }
 </script>

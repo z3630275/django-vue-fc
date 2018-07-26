@@ -29,12 +29,12 @@
 
 <style scoped>
   #top-nav {
-    position: absolute;
+    position: relative;
     width: 960px;
     height: 50px;
     background-color: #015293;
     margin: auto;
-    top: -245px;
+    top: 135px;
     left: 0;
     bottom: 0;
     right: 0;
