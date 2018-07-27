@@ -54,6 +54,10 @@ a {
   text-decoration: none;
   -webkit-backface-visibility: hidden;
 }
+a:hover{
+  color: #ff8400;
+  text-decoration: none;
+}
 
 li {
   list-style: none;

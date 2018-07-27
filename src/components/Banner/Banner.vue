@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div>
     <div id="certify">
       <div class="swiper-container">
@@ -14,52 +13,35 @@
       <div class="swiper-button-next"></div>
     </div>
     <div class="module">
-      <div class="wp">
-        <div class="module1">
-          <div class="left">
-            <!--<img src="./images/module3_1.jpg" alt="">-->
-            <p class="fisrt_word">营销活动</p>
-            <a class="more" href="">更多营销活动>></a>
-          </div>
-          <div class="right group_list">
-            <div class="module1_2 box">
-              <div class="imgslide2">
-                <ul class="imgs">
-                  <li>
-                    <a href="">
-                      <img width="470" height="300" src=""/>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="unslider-arrow2 prev"></div>
-              <div class="unslider-arrow2 next"></div>
-            </div>
-=======
-  <div id="certify">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./images/certify01.png"/>
-          </div>
-        <div class="swiper-slide"><img src="./images/certify02.png"/>
-          </div>
-        <div class="swiper-slide"><img src="./images/certify03.png"/>
-          </div>
-        <div class="swiper-slide"><img src="./images/certify04.png"/>
-          </div>
-        <div class="swiper-slide"><img src="./images/certify05.png"/>
-          </div>
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
->>>>>>> e1030f9787fbf60f255e672364fc0d18e8e306af
+      <div class="module1">
+        <div class="left">
+          <!--<img src="./images/module3_1.jpg" alt="">-->
+          <p class="fisrt_word">营销活动</p>
+          <a class="more" href="">更多营销活动>></a>
+        </div>
+        <div class="right">
+          <ul class="group_list_nav">
+            <li @mouseover="current='coming'" :class="{active:current=='coming'}"><a href="#">即将开展</a></li>
+            <li @mouseover="current='going'" :class="{active:current=='going'}"><a href="#">正在进行</a></li>
+            <li @mouseover="current='completed'" :class="{active:current=='completed'}"><a href="#">已经完成</a></li>
+          </ul>
+          <ul group_list_content>
+            <li v-show="current==='coming'"></li>
+            <li v-show="current==='going'">
+
+
+            </li>
+            <li v-show="current==='completed'"></li>
+          </ul>
+          <!--<div class="module1_2 box">-->
+
+            <!--<div class="unslider-arrow2 prev"></div>-->
+            <!--<div class="unslider-arrow2 next"></div>-->
+          <!--</div>-->
 
         </div>
-        </div>
       </div>
+
     </div>
   </div>
 </template>
@@ -69,6 +51,11 @@
   import 'swiper/dist/css/swiper.min.css'
 
   export default {
+    data() {
+      return {
+        current: 'going',
+      }
+    },
     mounted() {
       this.$store.dispatch('getBanner');
     },
@@ -80,11 +67,8 @@
         this.$nextTick(() => {
           new Swiper('#certify .swiper-container', {
             watchSlidesProgress: true,
-<<<<<<< HEAD
-            slidesPerView: 3,
-=======
             slidesPerView: 'auto',
->>>>>>> e1030f9787fbf60f255e672364fc0d18e8e306af
+
             centeredSlides: true,
             loop: true,
             loopedSlides: 5,
@@ -96,10 +80,7 @@
             pagination: {
               el: '.swiper-pagination',
               clickable: true,
-<<<<<<< HEAD
-=======
 
->>>>>>> e1030f9787fbf60f255e672364fc0d18e8e306af
             },
             on: {
               progress: function (progress) {
@@ -110,11 +91,9 @@
                   if (Math.abs(slideProgress) > 1) {
                     const modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
                   }
-<<<<<<< HEAD
-                  const translate = slideProgress * modify * 180 + 'px';
-=======
+
                   const translate = slideProgress * modify * 260 + 'px';
->>>>>>> e1030f9787fbf60f255e672364fc0d18e8e306af
+
                   const scale = 1 - Math.abs(slideProgress) / 5;
                   const zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
                   slide.transform('translateX(' + translate + ') scale(' + scale + ')');
@@ -146,13 +125,10 @@
   #certify {
     position: relative;
     width: 960px;
-<<<<<<< HEAD
-    margin: 0 auto;
-    top: 135px
-=======
+
     margin: auto;
     top: 135px;
->>>>>>> e1030f9787fbf60f255e672364fc0d18e8e306af
+
   }
 
   #certify .swiper-container {
@@ -160,43 +136,28 @@
   }
 
   #certify .swiper-slide {
-<<<<<<< HEAD
-    width: 100%;
-    height: 240px;
-=======
+
     width: 450px;
     height: 260px;
->>>>>>> e1030f9787fbf60f255e672364fc0d18e8e306af
     background: #fff;
     box-shadow: 0 8px 30px #ddd;
   }
 
   #certify .swiper-slide img {
-<<<<<<< HEAD
-    display: block;
-    width: 100%;
-    height: 240px;
-  }
 
-=======
     width: 100%;
     height: 260px;
     display: block;
   }
 
-
->>>>>>> e1030f9787fbf60f255e672364fc0d18e8e306af
   #certify .swiper-pagination {
     width: 100%;
     bottom: 30px;
   }
 
   #certify .swiper-pagination-bullets .swiper-pagination-bullet {
-<<<<<<< HEAD
-    margin: 0 5px;
-=======
+
     margin: 0 10px;
->>>>>>> e1030f9787fbf60f255e672364fc0d18e8e306af
     border: 3px solid #fff;
     background-color: #d5d5d5;
     width: 10px;
@@ -213,10 +174,7 @@
     left: -30px;
     width: 45px;
     height: 45px;
-<<<<<<< HEAD
     top: 120px;
-=======
->>>>>>> e1030f9787fbf60f255e672364fc0d18e8e306af
     background: url(./images/wm_button_icon.png) no-repeat;
     background-position: 0 0;
     background-size: 100%;
@@ -231,10 +189,7 @@
     right: -30px;
     width: 45px;
     height: 45px;
-<<<<<<< HEAD
     top: 120px;
-=======
->>>>>>> e1030f9787fbf60f255e672364fc0d18e8e306af
     background: url(./images/wm_button_icon.png) no-repeat;
     background-position: 0 -93px;
     background-size: 100%;
@@ -244,32 +199,59 @@
     background-position: 0 -139px;
     background-size: 100%
   }
-<<<<<<< HEAD
 
-  .module1 .left{
+  .module {
     position: relative;
-    margin: 0;
     width: 960px;
-    left: 195px;
-    top:100px;
+    margin: auto;
+    top: 135px;
+  }
+
+  .module1 .left {
     background: url(./images/module3_1.jpg) no-repeat;
     height: 400px;
   }
-  .module1 .fisrt_word{
+
+  .module1 .fisrt_word {
     position: relative;
-    top:50px;
+    top: 50px;
     margin: auto;
     left: 55px;
     color: whitesmoke;
-    font-size:30px;
-  }
-  .module1 .more{
-    position: relative;
-    top:70px;
-    margin: auto;
-    left: 60px;
+    font-size: 30px;
   }
 
-=======
->>>>>>> e1030f9787fbf60f255e672364fc0d18e8e306af
+  .module1 .more {
+    position: relative;
+    top: 70px;
+    margin: auto;
+    left: 60px;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  .module1 .right {
+    position: relative;
+    margin: auto;
+    top: -400px;
+    left: 260px;
+    bottom: 0;
+    right: 0;
+  }
+
+  .group_list_nav li {
+    width: 230px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid rgb(245, 245, 245);
+  }
+
+  .active {
+    border-top: 3px solid #ff8400 !important;
+    border-left: 1px solid #dbdee1;
+    border-right: 1px solid #dbdee1;
+    color: #ff8400;
+  }
+
 </style>
