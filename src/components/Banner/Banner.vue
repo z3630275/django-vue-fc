@@ -12,38 +12,155 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-    <div class="module">
-      <div class="module1">
-        <div class="left">
-          <!--<img src="./images/module3_1.jpg" alt="">-->
-          <p class="fisrt_word">营销活动</p>
-          <a class="more" href="">更多营销活动>></a>
-        </div>
-        <div class="right">
-          <ul class="group_list_nav">
-            <li @mouseover="current='coming'" :class="{active:current=='coming'}"><a href="#">即将开展</a></li>
-            <li @mouseover="current='going'" :class="{active:current=='going'}"><a href="#">正在进行</a></li>
-            <li @mouseover="current='completed'" :class="{active:current=='completed'}"><a href="#">已经完成</a></li>
-          </ul>
-          <ul group_list_content>
-            <li v-show="current==='coming'"></li>
-            <li v-show="current==='going'">
-
-
-            </li>
-            <li v-show="current==='completed'"></li>
-          </ul>
-          <!--<div class="module1_2 box">-->
-
-            <!--<div class="unslider-arrow2 prev"></div>-->
-            <!--<div class="unslider-arrow2 next"></div>-->
-          <!--</div>-->
-
-        </div>
+    <div class="module1">
+      <div class="left">
+        <!--<img src="./images/module3_1.jpg" alt="">-->
+        <p class="fisrt_word">营销活动</p>
+        <a class="more" href="">更多营销活动>></a>
       </div>
+      <div class="right">
+        <ul class="group_list_nav">
+          <li @mouseover.stop="current='coming'" :class="{active:current=='coming'}"><a href="#">即将开展</a></li>
+          <li @mouseover="current='going'" :class="{active:current=='going'}"><a href="#">正在进行</a></li>
+          <li @mouseover="current='completed'" :class="{active:current=='completed'}"><a href="#">已经完成</a></li>
+        </ul>
+        <ul class="group_list_content">
+          <li v-if="current==='coming'">
+            <table class="table-left">
+              <thead>
+              <tr>
+                <th>序号</th>
+                <th>市州</th>
+                <th>活动名称</th>
+                <th>活动时间</th>
+                <th>活动简介</th>
+                <th>详情</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>1</td>
+                <td>长沙</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>2008/11/28</td>
+                <td>$162,700</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>张家界</td>
+                <td>London</td>
+                <td>47</td>
+                <td>2009/10/09</td>
+                <td>$1,200,000</td>
+              </tr>
+                <tr>
+                <td>2</td>
+                <td>张家界</td>
+                <td>London</td>
+                <td>47</td>
+                <td>2009/10/09</td>
+                <td>$1,200,000</td>
+              </tr>
+                <tr>
+                <td>2</td>
+                <td>张家界</td>
+                <td>London</td>
+                <td>47</td>
+                <td>2009/10/09</td>
+                <td>$1,200,000</td>
+              </tr>
+                <tr>
+                <td>2</td>
+                <td>张家界</td>
+                <td>London</td>
+                <td>47</td>
+                <td>2009/10/09</td>
+                <td>$1,200,000</td>
+              </tr>
+                <tr>
+                <td>2</td>
+                <td>张家界</td>
+                <td>London</td>
+                <td>47</td>
+                <td>2009/10/09</td>
+                <td>$1,200,000</td>
+              </tr>
+              </tbody>
+            </table>
+          </li>
+          <li v-else-if="current==='going'">
+            <table class="table-left">
+              <thead>
+              <tr>
+                <th>序号</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Airi Satou</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>2008/11/28</td>
+                <td>$162,700</td>
+              </tr>
+              <tr>
+                <td>Angelica Ramos</td>
+                <td>Chief Executive Officer (CEO)</td>
+                <td>London</td>
+                <td>47</td>
+                <td>2009/10/09</td>
+                <td>$1,200,000</td>
+              </tr>
+              </tbody>
+            </table>
 
+          </li>
+          <li v-else>
+            <table class="table-left">
+              <thead>
+              <tr>
+                <th>序号</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Airi Satou</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>2008/11/28</td>
+                <td>$162,700</td>
+              </tr>
+              <tr>
+                <td>Angelica Ramos</td>
+                <td>Chief Executive Officer (CEO)</td>
+                <td>London</td>
+                <td>47</td>
+                <td>2009/10/09</td>
+                <td>$1,200,000</td>
+              </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+
+      </div>
     </div>
+
   </div>
+
 </template>
 <script>
   import {mapState} from 'vuex'
@@ -200,7 +317,7 @@
     background-size: 100%
   }
 
-  .module {
+  .module1 {
     position: relative;
     width: 960px;
     margin: auto;
@@ -210,15 +327,16 @@
   .module1 .left {
     background: url(./images/module3_1.jpg) no-repeat;
     height: 400px;
+    width: 228px;
   }
 
   .module1 .fisrt_word {
     position: relative;
     top: 50px;
     margin: auto;
-    left: 55px;
-    color: whitesmoke;
-    font-size: 30px;
+     color: whitesmoke;
+    font-size: 25px;
+    width: 100px;
   }
 
   .module1 .more {
@@ -237,6 +355,11 @@
     left: 260px;
     bottom: 0;
     right: 0;
+    height: 50px;
+  }
+
+  .group_list_nav{
+    z-index: 1000;
   }
 
   .group_list_nav li {
@@ -245,6 +368,15 @@
     text-align: center;
     line-height: 40px;
     border: 1px solid rgb(245, 245, 245);
+    font-size: 14px;
+  }
+
+  .group_list_content li {
+    position: relative;
+    margin: 0;
+    left: 27px;
+    top: 40px;
+    width: 650px;
   }
 
   .active {
@@ -252,6 +384,35 @@
     border-left: 1px solid #dbdee1;
     border-right: 1px solid #dbdee1;
     color: #ff8400;
+  }
+
+  table {
+    width: 100%;
+    font-size: .938em;
+
+  }
+
+  th {
+
+    font-weight: bold;
+    background: #ddde;
+    color: #424242;
+  }
+  tr:first-child{
+    width: 20px;
+  }
+
+
+  td {
+    padding: .5em .5em;
+    border-bottom: solid 1px #ccc;
+  }
+
+  table, table tr th, table tr td {
+    border: 1px solid #0094ff;
+    text-align: center;
+    line-height: 30px;
+
   }
 
 </style>

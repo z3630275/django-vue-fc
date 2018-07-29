@@ -18,7 +18,7 @@
     computed: {
       AoutWidth() {
         const count = this.titles.length;
-        let countwidth
+        let countwidth;
         countwidth = 960/ count;
         return countwidth
       }
@@ -44,6 +44,7 @@
   #top-nav li {
     float: left;
     text-align: center;
+    font-size: 14px;
     line-height: 50px;
     background: linear-gradient(to bottom, whitesmoke, wheat, white) no-repeat left / 1px 25px;
   }
