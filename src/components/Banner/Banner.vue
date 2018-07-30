@@ -34,7 +34,7 @@
                 <th>活动名称</th>
                 <th>活动时间</th>
                 <th>活动简介</th>
-                <th>详情</th>
+                <th>海报</th>
               </tr>
               </thead>
               <tbody>
@@ -54,7 +54,7 @@
                 <td>2009/10/09</td>
                 <td>$1,200,000</td>
               </tr>
-                <tr>
+              <tr>
                 <td>2</td>
                 <td>张家界</td>
                 <td>London</td>
@@ -62,7 +62,7 @@
                 <td>2009/10/09</td>
                 <td>$1,200,000</td>
               </tr>
-                <tr>
+              <tr>
                 <td>2</td>
                 <td>张家界</td>
                 <td>London</td>
@@ -70,7 +70,7 @@
                 <td>2009/10/09</td>
                 <td>$1,200,000</td>
               </tr>
-                <tr>
+              <tr>
                 <td>2</td>
                 <td>张家界</td>
                 <td>London</td>
@@ -78,7 +78,7 @@
                 <td>2009/10/09</td>
                 <td>$1,200,000</td>
               </tr>
-                <tr>
+              <tr>
                 <td>2</td>
                 <td>张家界</td>
                 <td>London</td>
@@ -98,7 +98,9 @@
                 <th>Office</th>
                 <th>Age</th>
                 <th>Start date</th>
-                <th>Salary</th>
+                <th>
+                  要一个新名称来称呼他们所讲授的课程，于是便出现了“市场营销”这个名词。
+                </th>
               </tr>
               </thead>
               <tbody>
@@ -158,7 +160,15 @@
 
       </div>
     </div>
+    <div class="module2">
+      <div class="left">
+        <!--<img src="./images/module3_1.jpg" alt="">-->
+        <p class="fisrt_word">旗舰店</p>
+        <a class="more" href="">更多旗舰店>></a>
+      </div>
 
+
+    </div>
   </div>
 
 </template>
@@ -334,9 +344,10 @@
     position: relative;
     top: 50px;
     margin: auto;
-     color: whitesmoke;
+    color: whitesmoke;
     font-size: 25px;
     width: 100px;
+    text-align: center;
   }
 
   .module1 .more {
@@ -350,17 +361,18 @@
 
   .module1 .right {
     position: relative;
+    width: 696px;
     margin: auto;
+    left: 140px;
     top: -400px;
-    left: 260px;
     bottom: 0;
     right: 0;
     height: 50px;
   }
 
-  .group_list_nav{
-    z-index: 1000;
-  }
+  /*.group_list_nav{*/
+  /*z-index: 1000;*/
+  /*}*/
 
   .group_list_nav li {
     width: 230px;
@@ -368,15 +380,20 @@
     text-align: center;
     line-height: 40px;
     border: 1px solid rgb(245, 245, 245);
+
+  }
+
+  .group_list_nav li a {
     font-size: 14px;
+    font-weight: bold;
+    color: #424242;
   }
 
   .group_list_content li {
-    position: relative;
-    margin: 0;
-    left: 27px;
-    top: 40px;
-    width: 650px;
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+
   }
 
   .active {
@@ -393,15 +410,13 @@
   }
 
   th {
-
-    font-weight: bold;
     background: #ddde;
-    color: #424242;
-  }
-  tr:first-child{
-    width: 20px;
+    padding: .5em .5em;
   }
 
+  /*tr:first-child {*/
+  /*width: 20px;*/
+  /*}*/
 
   td {
     padding: .5em .5em;
@@ -412,7 +427,41 @@
     border: 1px solid #0094ff;
     text-align: center;
     line-height: 30px;
+    vertical-align: middle;
 
   }
 
+  .module2 {
+    position: relative;
+    width: 960px;
+    margin: auto;
+    top: 130px;
+  }
+
+  .module2 .left {
+    background: url(./images/module6_1.jpg) no-repeat;
+    height: 400px;
+    width: 228px;
+
+  }
+
+  .module2 .fisrt_word {
+    position: absolute;
+    top:45px;
+    left:65px;
+    margin: auto;
+    color: whitesmoke;
+    font-size: 25px;
+    width: 100px;
+    text-align: center;
+  }
+
+  .module2 .more {
+    position: absolute;
+    margin: auto;
+    top:90px;
+    left: 70px;
+    color: whitesmoke;
+    text-decoration: none;
+  }
 </style>
