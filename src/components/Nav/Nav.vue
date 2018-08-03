@@ -19,7 +19,7 @@
       AoutWidth() {
         const count = this.titles.length;
         let countwidth;
-        countwidth = 960/ count;
+        countwidth = 1000/ count;
         return countwidth
       }
     },
@@ -30,7 +30,7 @@
 <style scoped>
   #top-nav {
     position: relative;
-    width: 960px;
+    width: 1000px;
     height: 50px;
     background-color: #015293;
     margin: auto;

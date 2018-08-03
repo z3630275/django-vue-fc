@@ -166,7 +166,206 @@
         <p class="fisrt_word">旗舰店</p>
         <a class="more" href="">更多旗舰店>></a>
       </div>
+      <div class="right">
+        <ul>
 
+          <li class="">
+            <a href="/org/home/2/">
+              <div class="company" @mouseover="vdisplay='block'" @mouseout="vdisplay='none'">
+                <img src="http://mxonlinestatic.mtianyan.cn/mnt/Mxonline2/media/org/2018/01/imooc_4IdqJ9p.png">
+                <div class="score" :style="{display: vdisplay}">
+                  <div class="circle">
+                    <h2>国内名校</h2>
+                  </div>
+                </div>
+              </div>
+              <p><span class="key" title="长沙">长沙</span></p>
+            </a>
+          </li>
+
+          <li class="">
+            <a href="/org/home/3/">
+              <div class="company">
+                <img src="http://mxonlinestatic.mtianyan.cn/mnt/Mxonline2/media/org/2018/01/beijingdaxue.png">
+                <div class="score" style="display: none;">
+                  <div class="circle">
+                    <h2>国内名校</h2>
+                  </div>
+                </div>
+              </div>
+              <p><span class="key" title="湘潭">湘潭</span></p>
+            </a>
+          </li>
+
+          <li class="">
+            <a href="/org/home/5/">
+              <div class="company">
+                <img src="http://mxonlinestatic.mtianyan.cn/mnt/Mxonline2/media/org/2018/01/zju_XOugCKr.png">
+                <div class="score">
+                  <div class="circle">
+                    <h2>国内名校</h2>
+                  </div>
+                </div>
+              </div>
+              <p><span class="key" title="株洲">株洲</span></p>
+            </a>
+          </li>
+
+          <li class="">
+            <a href="/org/home/6/">
+              <div class="company">
+                <img src="http://mxonlinestatic.mtianyan.cn/mnt/Mxonline2/media/org/2018/01/ynu_70oImVZ.png">
+                <div class="score">
+                  <div class="circle">
+                    <h2>国内名校</h2>
+                  </div>
+                </div>
+              </div>
+              <p><span class="key" title="衡阳">衡阳</span></p>
+            </a>
+          </li>
+
+          <li class="five">
+            <a href="/org/home/7/">
+              <div class="company">
+                <img src="http://mxonlinestatic.mtianyan.cn/mnt/Mxonline2/media/org/2018/01/mtianyan_mFUZjXX.png">
+                <div class="score">
+                  <div class="circle">
+                    <h2>国内名校</h2>
+                  </div>
+                </div>
+              </div>
+              <p><span class="key" title="郴州">郴州</span></p>
+            </a>
+          </li>
+
+          <li class="">
+            <a href="/org/home/8/">
+              <div class="company">
+                <img src="http://mxonlinestatic.mtianyan.cn/mnt/Mxonline2/media/org/2018/01/fudan.png">
+                <div class="score" style="display: none;">
+                  <div class="circle">
+                    <h2>国内名校</h2>
+                  </div>
+                </div>
+              </div>
+              <p><span class="key" title="常德">常德</span></p>
+            </a>
+          </li>
+
+          <li class="">
+            <a href="/org/home/9/">
+              <div class="company">
+                <img src="http://mxonlinestatic.mtianyan.cn/mnt/Mxonline2/media/org/2018/01/mtianyan_6chFdZo.png">
+                <div class="score" style="display: none;">
+                  <div class="circle">
+                    <h2>国内名校</h2>
+                  </div>
+                </div>
+              </div>
+              <p><span class="key" title="益阳">益阳</span></p>
+            </a>
+          </li>
+
+          <li class="">
+            <a href="/org/home/10/">
+              <div class="company">
+                <img src="http://mxonlinestatic.mtianyan.cn/mnt/Mxonline2/media/org/2018/01/shenzhen.png">
+                <div class="score">
+                  <div class="circle">
+                    <h2>国内名校</h2>
+                  </div>
+                </div>
+              </div>
+              <p><span class="key" title="娄底">娄底</span></p>
+            </a>
+          </li>
+          <li class="">
+            <a href="/org/home/8/">
+              <div class="company">
+                <img src="http://mxonlinestatic.mtianyan.cn/mnt/Mxonline2/media/org/2018/01/fudan.png">
+                <div class="score" style="display: none;">
+                  <div class="circle">
+                    <h2>国内名校</h2>
+                  </div>
+                </div>
+              </div>
+              <p><span class="key" title="邵阳">邵阳</span></p>
+            </a>
+          </li>
+
+          <li class="">
+            <a href="/org/home/9/">
+              <div class="company">
+                <img src="http://mxonlinestatic.mtianyan.cn/mnt/Mxonline2/media/org/2018/01/mtianyan_6chFdZo.png">
+                <div class="score" style="display: none;">
+                  <div class="circle">
+                    <h2>国内名校</h2>
+                  </div>
+                </div>
+              </div>
+              <p><span class="key" title="岳阳">岳阳</span></p>
+            </a>
+          </li>
+
+          <li class="">
+            <a href="/org/home/10/">
+              <div class="company">
+                <img src="http://mxonlinestatic.mtianyan.cn/mnt/Mxonline2/media/org/2018/01/shenzhen.png">
+                <div class="score">
+                  <div class="circle">
+                    <h2>国内名校</h2>
+                  </div>
+                </div>
+              </div>
+              <p><span class="key" title="永州">永州</span></p>
+            </a>
+          </li>
+          <li class="">
+            <a href="/org/home/8/">
+              <div class="company">
+                <img src="http://mxonlinestatic.mtianyan.cn/mnt/Mxonline2/media/org/2018/01/fudan.png">
+                <div class="score" style="display: none;">
+                  <div class="circle">
+                    <h2>国内名校</h2>
+                  </div>
+                </div>
+              </div>
+              <p><span class="key" title="怀化">怀化</span></p>
+            </a>
+          </li>
+
+          <li class="">
+            <a href="/org/home/9/">
+              <div class="company">
+                <img src="http://mxonlinestatic.mtianyan.cn/mnt/Mxonline2/media/org/2018/01/mtianyan_6chFdZo.png">
+                <div class="score" style="display: none;">
+                  <div class="circle">
+                    <h2>国内名校</h2>
+                  </div>
+                </div>
+              </div>
+              <p><span class="key" title="湘西">湘西</span></p>
+            </a>
+          </li>
+
+          <li class="">
+            <a href="/org/home/10/">
+              <div class="company">
+                <img src="http://mxonlinestatic.mtianyan.cn/mnt/Mxonline2/media/org/2018/01/shenzhen.png">
+                <div class="score">
+                  <div class="circle">
+                    <h2>国内名校</h2>
+                  </div>
+                </div>
+              </div>
+              <p><span class="key" title="张家界">张家界</span></p>
+            </a>
+          </li>
+
+
+        </ul>
+      </div>
 
     </div>
   </div>
@@ -181,6 +380,7 @@
     data() {
       return {
         current: 'going',
+        vdisplay: 'none',
       }
     },
     mounted() {
@@ -219,7 +419,7 @@
                     const modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
                   }
 
-                  const translate = slideProgress * modify * 260 + 'px';
+                  const translate = slideProgress * modify *100+ 'px';
 
                   const scale = 1 - Math.abs(slideProgress) / 5;
                   const zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
@@ -251,11 +451,9 @@
 <style>
   #certify {
     position: relative;
-    width: 960px;
-
+    width: 1000px;
     margin: auto;
-    top: 135px;
-
+    margin-top: 135px;
   }
 
   #certify .swiper-container {
@@ -328,42 +526,43 @@
   }
 
   .module1 {
-    position: relative;
-    width: 960px;
+    width: 1000px;
+    height: 400px;
     margin: auto;
-    top: 135px;
+    position: relative;
+
   }
 
   .module1 .left {
     background: url(./images/module3_1.jpg) no-repeat;
     height: 400px;
-    width: 228px;
+    width: 200px;
   }
 
-  .module1 .fisrt_word {
-    position: relative;
-    top: 50px;
-    margin: auto;
-    color: whitesmoke;
-    font-size: 25px;
-    width: 100px;
-    text-align: center;
+  .fisrt_word {
+  position: absolute;
+  top: 50px;
+  margin: auto;
+  color: whitesmoke;
+  font-size: 25px;
+  width: 200px;
+  text-align: center;
   }
 
-  .module1 .more {
-    position: relative;
-    top: 70px;
-    margin: auto;
-    left: 60px;
-    color: whitesmoke;
-    text-decoration: none;
+  .more {
+  position: absolute;
+  top: 85px;
+  margin: auto;
+  left: 50px;
+  color: whitesmoke;
+  text-decoration: none;
   }
 
   .module1 .right {
     position: relative;
-    width: 696px;
+    width: 780px;
     margin: auto;
-    left: 140px;
+    left: 112px;
     top: -400px;
     bottom: 0;
     right: 0;
@@ -375,11 +574,12 @@
   /*}*/
 
   .group_list_nav li {
-    width: 230px;
+    width: 33.33%;
     float: left;
     text-align: center;
     line-height: 40px;
     border: 1px solid rgb(245, 245, 245);
+    box-sizing: border-box;
 
   }
 
@@ -390,7 +590,7 @@
   }
 
   .group_list_content li {
-    float: left;
+    float: left;\
     margin-top: 15px;
     width: 100%;
 
@@ -432,36 +632,73 @@
   }
 
   .module2 {
-    position: relative;
-    width: 960px;
+    width: 1000px;
     margin: auto;
-    top: 130px;
+    position: relative;
+    top: 30px;
   }
 
   .module2 .left {
     background: url(./images/module6_1.jpg) no-repeat;
     height: 400px;
-    width: 228px;
+    width: 200px;
+    position: absolute;
+  }
+
+  .module2 .right {
+    width: 816px;
+    height: 100%;
+    position: absolute;
+    left:220px;
+  }
+
+
+  .module2 li {
+    width: 140px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 40px;
 
   }
 
-  .module2 .fisrt_word {
+  .module2 .company {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    background: #fff;
+  }
+
+  .module2 .company img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .module2 .score {
+    display: none;
     position: absolute;
-    top:45px;
-    left:65px;
-    margin: auto;
-    color: whitesmoke;
-    font-size: 25px;
-    width: 100px;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    background: #717171;
+    opacity: .9;
+    filter: Alpha(opacity=90);
+    width: 100%;
+    height: 100%;
+    color: #fff;
     text-align: center;
   }
-
-  .module2 .more {
-    position: absolute;
-    margin: auto;
-    top:90px;
-    left: 70px;
-    color: whitesmoke;
-    text-decoration: none;
-  }
+.module2 li p {
+    line-height: 40px;
+    text-align: center;
+    color: #333;
+}
+  .module2 .key:hover {
+    color: #fb8341 !important;
+    font-size: 14px;
+}
 </style>
