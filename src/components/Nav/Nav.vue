@@ -1,10 +1,11 @@
 <template>
-  <div id="top-nav">
-    <ul>
-      <li v-for="(title,index) in titles" :key="index" :style="{width:AoutWidth+'px' }"><a href="#">{{title}}</a></li>
+  <section class="mynav container">
+    <ul class="nav  justify-content-around ">
+      <li class="nav-item " v-for="(title,index) in titles" :key="index">
+        <a class="nav-link text-light" href="#">{{title}}</a>
+      </li>
     </ul>
-  </div>
-
+  </section>
 </template>
 
 <script>
@@ -12,15 +13,7 @@
   export default {
     data() {
       return {
-        titles: ['首页', '营销活动', '旗舰店建设', '营销活动', '旗舰店建设', '营销活动', '旗舰店建设', '营销活动']
-      }
-    },
-    computed: {
-      AoutWidth() {
-        const count = this.titles.length;
-        let countwidth;
-        countwidth = 1000/ count;
-        return countwidth
+        titles: ['首页', '营销活动', '旗舰店建设', '增机布点','联系我们']
       }
     },
 
@@ -28,33 +21,25 @@
 </script>
 
 <style scoped>
-  #top-nav {
-    position: relative;
-    width: 1000px;
-    height: 50px;
-    background-color: #015293;
-    margin: auto;
-    top: 135px;
+  .mynav {
+    position: absolute;
     left: 0;
-    bottom: 0;
     right: 0;
-    color: white;
+    top: 200px;
+    background: #015293;
   }
 
-  #top-nav li {
-    float: left;
-    text-align: center;
-    font-size: 14px;
-    line-height: 50px;
-    background: linear-gradient(to bottom, whitesmoke, wheat, white) no-repeat left / 1px 25px;
+  .mynav li {
+    background: linear-gradient(to bottom, whitesmoke, wheat, white) no-repeat right / 1px 25px;
+    padding-right: 60px;
   }
-
-  #top-nav li:first-child{
+  .mynav li:last-child{
     background: none;
   }
 
-  #top-nav li a {
-    color: white;
+
+  a {
+    text-decoration: none;
   }
 
 

@@ -1,0 +1,25 @@
+<template>
+  <section class="container">
+
+<div class="row">
+  <div class="col-md-4" style="background: red;height:200px">.col-md-4</div>
+  <div class="col-md-4">.col-md-4 .offset-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+  <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+</div>
+<div class="row">
+  <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+</div>
+
+  </section>
+</template>
+
+<script>
+    export default {}
+</script>
+
+<style >
+
+</style>
